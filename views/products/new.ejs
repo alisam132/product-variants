@@ -1,0 +1,62 @@
+<!-- views/applications/new.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add a New Product</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="/css/sb-admin-2.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <%- include('../partials/_navbar.ejs') %>
+    <h1>Add a New Product</h1>
+    <div class="h-100 d-flex align-items-center justify-content-center" style="text-align:center">
+      <form action="/products" method="POST">
+            <div class="form-row">
+              <label for="productName">Product Name</label>
+              <input type="text" name="name" class="form-control" id="productName" placeholder="Product Name">
+            </div>
+            <div class="form-row">
+              <label for="productQuantity">Quantity</label>
+              <input type="number" name="quantity" class="form-control" id="productQuantity">
+              <label for="productPrice">Price</label>
+              <input type="text" name="price" class="form-control" id="productPrice">
+            </div>
+            <p></p>
+            <div>
+              <label for="Productvariants">Product Variant</label>
+              <select class="form-select" id="Productvariants" name="attributeName">
+
+                <%
+                for ( let i = 0; i < Productvariants.length; i++ )
+                {
+                    let selected = ( Productvariants[0].attributeName == i ) ? "selected" : "";
+                    %><option value="<%=Productvariants[ i ].attributeName %>" <%=selected %>><%=Productvariants[ i ].attributeName %></option><%
+                }
+                %>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Create</button>
+          </form>
+      </div>
+     <!-- Bootstrap core JavaScript-->
+      <script src="/vendor/jquery/jquery.min.js"></script>
+      <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+      <!-- Core plugin JavaScript-->
+      <script src=/vendor/jquery-easing/jquery.easing.min.js"></script>
+  
+      <!-- Custom scripts for all pages-->
+      <script src="/js/sb-admin-2.min.js"></script>
+
+  </body>
+</html>

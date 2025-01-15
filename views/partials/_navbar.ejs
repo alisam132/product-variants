@@ -1,0 +1,11 @@
+<nav
+  class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow"
+>
+  <% if(user) { %>
+  <a class="btn btn-danger" href="/auth/sign-out">Sign Out</a>
+  <a class="btn btn-primary" href="/">Back Home</a>
+  <% } else { %>
+  <a class="btn btn-primary" href="/auth/sign-in">Sign In</a>
+  <a class="btn btn-primary" href="/auth/sign-up">Sign Up</a>
+  <% } %>
+</nav>
