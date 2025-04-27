@@ -37,9 +37,11 @@ _A product variant app is a software tool designed to manage and display differe
 
 ## Technologies Used
 
-![EJS]
-![CSS]-[SB Admin Bootstrap Templet](https://startbootstrap.com/previews/sb-admin-2) 
-![JavaScript]-[SB Admin Bootstrap Templet](https://startbootstrap.com/previews/sb-admin-2)
+![EJS](https://img.icons8.com/?size=512&id=puL87ypQPxxr&format=png)
+![SB Admin Bootstrap Templet](https://startbootstrap.com/previews/sb-admin-2) 
+![HTML](https://img.shields.io/badge/-HTML-E34F26?logo=html5&logoColor=white&style=flat-square)  
+![CSS](https://img.shields.io/badge/-CSS-1572B6?logo=css3&logoColor=white&style=flat-square)  
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat-square)
 
 ----------
 
